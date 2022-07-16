@@ -1,0 +1,65 @@
+.container {
+  width: 99.8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coinContainerAsc,
+.coinContainerDec {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid rgb(60, 59, 59);
+  border-radius: 10px;
+  margin: 6px 0px;
+  color: white;
+  padding: 12px 10px;
+}
+.coinContainerAsc {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgba(121, 9, 9, 1) 90%,
+    rgba(245, 7, 7, 1) 100%
+  );
+}
+.coinContainerDec {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgba(14, 159, 123, 1) 90%,
+    rgba(0, 245, 65, 1) 100%
+  );
+}
+.coinContainerAsc img {
+  width: 50px;
+}
+.coinContainerDec img {
+  width: 50px;
+}
+.coinContainerAsc span,
+.coinContainerDec span {
+  padding: 0px 5px;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .coinContainerAsc,
+  .coinContainerDec {
+    width: 80%;
+  }
+}
+@media (max-width: 590px) {
+  .coinContainerAsc,
+  .coinContainerDec {
+    width: 90%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 360px) {
+    .coinName{
+        display: none;
+    }
+}

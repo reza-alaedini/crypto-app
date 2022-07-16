@@ -1,0 +1,35 @@
+.search {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease;
+  margin: 20px;
+  width: 10%;
+  height: 25px;
+  font-size: 1.2rem;
+}
+.search::placeholder {
+  color: white;
+}
+.search:focus {
+    border: 1px solid rgb(48, 98, 248);
+    width: 15%;
+}
+@media (max-width: 900px) {
+    .search {
+      width: 60%;
+    }
+    .search:focus{
+        width: 65%;
+    }
+  }
+  @media (max-width: 590px) {
+    .search {
+      width: 70%;
+    }
+    .search:focus{
+        width: 75%;
+    }
+  }
