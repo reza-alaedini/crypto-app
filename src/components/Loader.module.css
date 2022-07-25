@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .loaderGif {
+    width: 650px;
+    height: 330px;
+  }
+}

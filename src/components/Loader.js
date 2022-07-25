@@ -1,13 +1,18 @@
-import React from 'react';
+import React from "react";
 import Gif from "./../gif/Loader.gif";
 
- const Loader = () => {
-     return ( 
-         <>
-         <img src={Gif} alt="Loader" />
-         {/* <h2 style={{color: "white"}}>Loading ...</h2> */}
-         </>
-      );
- }
-  
- export default Loader;
+//Style
+import styles from "./Loader.module.css";
+
+const Loader = () => {
+  return (
+    <div
+      className={styles.container}
+    >
+      <img src={Gif} alt="Loader" className={styles.loaderGif} />
+      {/* <h2 style={{color: "white"}}>Loading ...</h2> */}
+    </div>
+  );
+};
+
+export default Loader;

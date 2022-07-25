@@ -55,6 +55,7 @@ const Landing = () => {
               priceChange={coin.price_change_percentage_24h}
             />
           ))}
+          {/* <Loader /> */}
         </div>
       ) : (
         <Loader />
