@@ -10,7 +10,6 @@ const Loader = () => {
       className={styles.container}
     >
       <img src={Gif} alt="Loader" className={styles.loaderGif} />
-      {/* <h2 style={{color: "white"}}>Loading ...</h2> */}
     </div>
   );
 };
